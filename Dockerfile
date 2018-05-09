@@ -1,2 +1,2 @@
-FROM ubuntu:trusty
-RUN apt-get update && apt-get install -yq dnsutils && apt-get clean && rm -rf /var/lib/apt/lists
+FROM alpine:3.7
+RUN apk update && apk add iputils bind-tools && rm -rf /var/lib/apt/lists
